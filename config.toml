@@ -1,0 +1,4 @@
+baseURL = 'https://davidgs.com/'
+languageCode = 'en-us'
+title = 'Camunda IoT Workshop'
+theme = 'hugo-theme-learn'

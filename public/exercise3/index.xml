@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Exercise 3 on Camunda IoT Workshop</title>
+    <link>https://davidgs.com/camunda-workshop/exercise3/</link>
+    <description>Recent content in Exercise 3 on Camunda IoT Workshop</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 26 Apr 2022 18:47:39 +0200</lastBuildDate><atom:link href="https://davidgs.com/camunda-workshop/exercise3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building The Hardware</title>
+      <link>https://davidgs.com/camunda-workshop/exercise3/building_hardware/</link>
+      <pubDate>Tue, 26 Apr 2022 19:25:47 +0200</pubDate>
+      
+      <guid>https://davidgs.com/camunda-workshop/exercise3/building_hardware/</guid>
+      <description>Building the hardware It&amp;rsquo;s time to assemble the hardware for the lab, finally! Here&amp;rsquo;s what the entire contents of the kit look like:
+If you&amp;rsquo;re missing any pieces, please let me know. What you should have is: - 1 ESP32-Cam Board - 1 camera module - 1 programmer board - 1 breadboard - 2 10k ohm resistors - 2 tactile buttons (with colored covers) - 1 USB to TTL adapter - 11 jumper wires</description>
+    </item>
+    
+    <item>
+      <title>Configuring The Hardware</title>
+      <link>https://davidgs.com/camunda-workshop/exercise3/configuring_hardware/</link>
+      <pubDate>Tue, 26 Apr 2022 19:26:12 +0200</pubDate>
+      
+      <guid>https://davidgs.com/camunda-workshop/exercise3/configuring_hardware/</guid>
+      <description>Adding the Libraries Now that you&amp;rsquo;ve assembled the hardware, you&amp;rsquo;ll need to configure it to use in your process.
+We will need to connect it to WiFi and set the C8 process variables so that our camera can connect to our process and start jobs.
+This is a fairly easy process thanks to the WiFiManager library that we will be using.
+The first step is to open the Arduino IDE and open the CandyCam sketch.</description>
+    </item>
+    
+    <item>
+      <title>Software Settings</title>
+      <link>https://davidgs.com/camunda-workshop/exercise3/software_settings/</link>
+      <pubDate>Tue, 26 Apr 2022 19:36:13 +0200</pubDate>
+      
+      <guid>https://davidgs.com/camunda-workshop/exercise3/software_settings/</guid>
+      <description>Configuring the Software Once the upload is complete, open the Serial Monitor and look for the line:
+*wm:[1] StartAP with SSID: ESP32_48BD9E7C You&amp;rsquo;re looking for that SSID specifically. You should now be able to go to your WiFi network and connect to that SSID. Once connected, look for the IP address you&amp;rsquo;ve been assigned, which should be something like 192.168.4.2. Point your web browser at the Gateway Address for that IP address (it will be the same address, but ending in 1, so in the above example it should be 192.</description>
+    </item>
+    
+    <item>
+      <title>Troubleshooting</title>
+      <link>https://davidgs.com/camunda-workshop/exercise3/troubleshooting/</link>
+      <pubDate>Tue, 26 Apr 2022 19:29:27 +0200</pubDate>
+      
+      <guid>https://davidgs.com/camunda-workshop/exercise3/troubleshooting/</guid>
+      <description>Troubleshooting If you&amp;rsquo;re having trouble with the port &amp;ldquo;timing out&amp;rdquo;, try reducing the port speed to 115200. If you&amp;rsquo;re unable to reduce the port speed, you can open a terminal and run the following command:
+$ esptool.py -p YOUR_PORT -b 115200 ... and then copy/paste the failed command from the Arduino IDE window (the part after the -p section) into the terminal.</description>
+    </item>
+    
+  </channel>
+</rss>

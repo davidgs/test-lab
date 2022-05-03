@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Exercise 6 on Camunda IoT Workshop</title>
+    <link>https://davidgs.com/camunda-workshop/exercise6/</link>
+    <description>Recent content in Exercise 6 on Camunda IoT Workshop</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 26 Apr 2022 18:48:06 +0200</lastBuildDate><atom:link href="https://davidgs.com/camunda-workshop/exercise6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A New Model</title>
+      <link>https://davidgs.com/camunda-workshop/exercise6/a_new_model/</link>
+      <pubDate>Tue, 26 Apr 2022 20:44:07 +0200</pubDate>
+      
+      <guid>https://davidgs.com/camunda-workshop/exercise6/a_new_model/</guid>
+      <description>The New Process Since we are no longer using any forms, or any user tasks, our process is going to be very short and relatively simple.
+As you can see, we have one external task, followed by a decision table, followed by the task to dispense candy (if any candy is deserved, of course).
+This is, clearly, a much simplified and more efficient process that requires no human interaction. We can deploy this process and have it run, unattended, for as long as we want.</description>
+    </item>
+    
+    <item>
+      <title>Google AI Process</title>
+      <link>https://davidgs.com/camunda-workshop/exercise6/google_ai/</link>
+      <pubDate>Tue, 26 Apr 2022 19:02:08 +0200</pubDate>
+      
+      <guid>https://davidgs.com/camunda-workshop/exercise6/google_ai/</guid>
+      <description>The Google AI Task The first thing that happens when a picture is submitted is that we execute a &amp;ldquo;Submit to Google AI&amp;rdquo; external task. This task takes the provided picture, submits it to Google&amp;rsquo;s Vision AI API, and returns the evaluated results to the model.
+To do this, we will submit the picture to Google&amp;rsquo;s Vision AI API. This is why we all enabled that API in our Google Console back in Exercise 1!</description>
+    </item>
+    
+    <item>
+      <title>Making Decisions</title>
+      <link>https://davidgs.com/camunda-workshop/exercise6/making_decisions/</link>
+      <pubDate>Tue, 26 Apr 2022 19:02:35 +0200</pubDate>
+      
+      <guid>https://davidgs.com/camunda-workshop/exercise6/making_decisions/</guid>
+      <description>Making Decisions Now that we are using a different criteria for our decision, we need to create an entirely new decision table in order to decide how much candy to distribute.
+Woah! That&amp;rsquo;s a complicated table! In fact, it&amp;rsquo;s not just one table but a whole series of them, all feeding into one final table that will decide how much candy to distribute.
+Note: the smaller tables contain my proprietary algorithm for giving out candy based on the detected mood of the person in the picture but you are welcome to create your own by modifying those tables however you wish.</description>
+    </item>
+    
+    <item>
+      <title>Conclusions</title>
+      <link>https://davidgs.com/camunda-workshop/exercise6/conclusions/</link>
+      <pubDate>Tue, 26 Apr 2022 20:47:05 +0200</pubDate>
+      
+      <guid>https://davidgs.com/camunda-workshop/exercise6/conclusions/</guid>
+      <description>What have we learned? I hope that this lab has been both interesting as well as useful.
+We&amp;rsquo;ve seen how we can iterate on a process that started out as very complicated and cumbersome, streamlined it a bit to make it easier, and then finally employed some image AI technology to make it all automated, cutting out human interaction entirely.
+Some key concepts I hope you&amp;rsquo;ve learned:
+ How to use BPMN to automate a process How to create external task workers to handle tasks How to use Forms to allow humans to interact with a process How to automate decisions with DMN Decision tables How to completely automate a process with AI and DMN Decision tables  If you have questions or comments, please feel free to reach out to me at @jdavid.</description>
+    </item>
+    
+  </channel>
+</rss>

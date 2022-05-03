@@ -1,0 +1,1537 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.94.2" />
+    <meta name="description" content="">
+
+
+    <link rel="icon" href="/camunda-workshop/images/favicon.png" type="image/png">
+
+    <title>Google AI Process :: Camunda IoT Workshop</title>
+
+    
+    <link href="/camunda-workshop/css/nucleus.css?1651015392" rel="stylesheet">
+    <link href="/camunda-workshop/css/fontawesome-all.min.css?1651015392" rel="stylesheet">
+    <link href="/camunda-workshop/css/hybrid.css?1651015392" rel="stylesheet">
+    <link href="/camunda-workshop/css/featherlight.min.css?1651015392" rel="stylesheet">
+    <link href="/camunda-workshop/css/perfect-scrollbar.min.css?1651015392" rel="stylesheet">
+    <link href="/camunda-workshop/css/auto-complete.css?1651015392" rel="stylesheet">
+    <link href="/camunda-workshop/css/atom-one-dark-reasonable.css?1651015392" rel="stylesheet">
+    <link href="/camunda-workshop/css/theme.css?1651015392" rel="stylesheet">
+    <link href="/camunda-workshop/css/tabs.css?1651015392" rel="stylesheet">
+    <link href="/camunda-workshop/css/hugo-theme.css?1651015392" rel="stylesheet">
+    
+    
+
+    <script src="/camunda-workshop/js/jquery-3.3.1.min.js?1651015392"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/camunda-workshop/exercise6/google_ai/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a href=".."><img src="/images/Logo_Black.png"></a>
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/camunda-workshop/js/lunr.min.js?1651015392"></script>
+<script type="text/javascript" src="/camunda-workshop/js/auto-complete.js?1651015392"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/davidgs.com\/camunda-workshop";
+    
+</script>
+<script type="text/javascript" src="/camunda-workshop/js/search.js?1651015392"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/'><i class='fas fa-home'></i> Home</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/camunda-workshop/exercise1/" title="Exercise 1" class="dd-item
+        
+        
+        
+        ">
+      <a href="/camunda-workshop/exercise1/">
+          <b>1. </b>Exercise 1
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise1/camunda_platform_8/" title="Camunda Platform 8" class="dd-item ">
+        <a href="/camunda-workshop/exercise1/camunda_platform_8/">
+        <b>A. </b>Camunda Platform 8
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise1/google_vision_ai/" title="Google Vision AI" class="dd-item ">
+        <a href="/camunda-workshop/exercise1/google_vision_ai/">
+        <b>B. </b>Google Vision AI
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/camunda-workshop/exercise2/" title="Exercise 2" class="dd-item
+        
+        
+        
+        ">
+      <a href="/camunda-workshop/exercise2/">
+          <b>2. </b>Exercise 2
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise2/setup/" title="Setup" class="dd-item ">
+        <a href="/camunda-workshop/exercise2/setup/">
+        <b>A. </b>Setup
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise2/testing/" title="Testing" class="dd-item ">
+        <a href="/camunda-workshop/exercise2/testing/">
+        <b>B. </b>Testing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/camunda-workshop/exercise3/" title="Exercise 3" class="dd-item
+        
+        
+        
+        ">
+      <a href="/camunda-workshop/exercise3/">
+          <b>3. </b>Exercise 3
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise3/building_hardware/" title="Building The Hardware" class="dd-item ">
+        <a href="/camunda-workshop/exercise3/building_hardware/">
+        <b>A. </b>Building The Hardware
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise3/configuring_hardware/" title="Configuring The Hardware" class="dd-item ">
+        <a href="/camunda-workshop/exercise3/configuring_hardware/">
+        <b>B. </b>Configuring The Hardware
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise3/software_settings/" title="Software Settings" class="dd-item ">
+        <a href="/camunda-workshop/exercise3/software_settings/">
+        <b>C. </b>Software Settings
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise3/troubleshooting/" title="Troubleshooting" class="dd-item ">
+        <a href="/camunda-workshop/exercise3/troubleshooting/">
+        <b>D. </b>Troubleshooting
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/camunda-workshop/exercise4/" title="Exercise 4" class="dd-item
+        
+        
+        
+        ">
+      <a href="/camunda-workshop/exercise4/">
+          <b>4. </b>Exercise 4
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise4/starting_a_process_instance/" title="Starting A Process Instance" class="dd-item ">
+        <a href="/camunda-workshop/exercise4/starting_a_process_instance/">
+        <b>A. </b>Starting A Process Instance
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise4/completing_tasks/" title="Completing Tasks" class="dd-item ">
+        <a href="/camunda-workshop/exercise4/completing_tasks/">
+        <b>B. </b>Completing Tasks
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise4/testing_a_process_instance/" title="Testing A Process Instance" class="dd-item ">
+        <a href="/camunda-workshop/exercise4/testing_a_process_instance/">
+        <b>C. </b>Testing A Process Instance
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise4/lessons_learned/" title="Lessons Learned" class="dd-item ">
+        <a href="/camunda-workshop/exercise4/lessons_learned/">
+        <b>D. </b>Lessons Learned
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/camunda-workshop/exercise5/" title="Exercise 5" class="dd-item
+        
+        
+        
+        ">
+      <a href="/camunda-workshop/exercise5/">
+          <b>5. </b>Exercise 5
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise5/creating_a_decision_table/" title="Creating A Decision Table" class="dd-item ">
+        <a href="/camunda-workshop/exercise5/creating_a_decision_table/">
+        <b>A. </b>Creating A Decision Table
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise5/creating_a_form/" title="Creating A Form" class="dd-item ">
+        <a href="/camunda-workshop/exercise5/creating_a_form/">
+        <b>B. </b>Creating A Form
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise5/creating_a_model/" title="The Simplified Model" class="dd-item ">
+        <a href="/camunda-workshop/exercise5/creating_a_model/">
+        <b>C. </b>The Simplified Model
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise5/deploying_the_process/" title="Deploying the process" class="dd-item ">
+        <a href="/camunda-workshop/exercise5/deploying_the_process/">
+        <b>D. </b>Deploying the process
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise5/starting_the_process/" title="Starting the process" class="dd-item ">
+        <a href="/camunda-workshop/exercise5/starting_the_process/">
+        <b>E. </b>Starting the process
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise5/testing_the_process/" title="Testing the Process" class="dd-item ">
+        <a href="/camunda-workshop/exercise5/testing_the_process/">
+        <b>F. </b>Testing the Process
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise5/conclusions/" title="Conclusions" class="dd-item ">
+        <a href="/camunda-workshop/exercise5/conclusions/">
+        <b>E. </b>Conclusions
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/camunda-workshop/exercise6/" title="Exercise 6" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/camunda-workshop/exercise6/">
+          <b>6. </b>Exercise 6
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise6/a_new_model/" title="A New Model" class="dd-item ">
+        <a href="/camunda-workshop/exercise6/a_new_model/">
+        <b>A. </b>A New Model
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise6/google_ai/" title="Google AI Process" class="dd-item active">
+        <a href="/camunda-workshop/exercise6/google_ai/">
+        <b>B. </b>Google AI Process
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise6/making_decisions/" title="Making Decisions" class="dd-item ">
+        <a href="/camunda-workshop/exercise6/making_decisions/">
+        <b>C. </b>Making Decisions
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise6/conclusions/" title="Conclusions" class="dd-item ">
+        <a href="/camunda-workshop/exercise6/conclusions/">
+        <b>D. </b>Conclusions
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>Workshop content © <a href="https://davidgs.com" target=_blank>David G. Simmons</a>, 2022</p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/camunda-workshop/'>Camunda IoT Workshop</a> > <a href='/camunda-workshop/exercise6/'>Exercise 6</a> > Google AI Process
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#the-google-ai-task">The Google AI Task</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Google AI Process
+            </h1>
+          
+
+        
+
+
+<h3 id="the-google-ai-task">The Google AI Task</h3>
+<p>The first thing that happens when a picture is submitted is that we execute a &ldquo;Submit to Google AI&rdquo; external task. This task takes the provided picture, submits it to Google&rsquo;s Vision AI API, and returns the evaluated results to the model.</p>
+<p>To do this, we will submit the picture to Google&rsquo;s Vision AI API. This is why we all enabled that API in our Google Console back in Exercise 1!</p>
+<p>If you&rsquo;re not interested in how this whole process works, you can simply build and start the <a href="exercise-6.go">exercise-6.go</a> task worker as is with the following command in your terminal:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ go mod init exercise-6
+</span></span><span style="display:flex;"><span>$ go mod tidy
+</span></span><span style="display:flex;"><span>$ go build
+</span></span><span style="display:flex;"><span>$ ./exercise-6
+</span></span></code></pre></div><p>Much of the Golang code in this Task Worker will look vary familiar from previous exercises. We start a Task Worker using our Camunda Platform 8 credentials, which listens for tasks with the ID <code>DoPictureAI</code>. When it finds one, it gets the process variable <code>imageLoc</code>, downloads the picture at that location, and submits it to the Google Vision AI for processing.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#a6e22e">jobKey</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">job</span>.<span style="color:#a6e22e">GetKey</span>()
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">_</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">job</span>.<span style="color:#a6e22e">GetCustomHeadersAsMap</span>()
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+</span></span><span style="display:flex;"><span>		<span style="color:#75715e">// failed to handle job as we require the custom job headers
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>		<span style="color:#a6e22e">failJob</span>(<span style="color:#a6e22e">client</span>, <span style="color:#a6e22e">job</span>)
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span>
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">jobVars</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">JobVars</span>{}
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">err</span> = <span style="color:#a6e22e">job</span>.<span style="color:#a6e22e">GetVariablesAs</span>(<span style="color:#f92672">&amp;</span><span style="color:#a6e22e">jobVars</span>)
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">failJob</span>(<span style="color:#a6e22e">client</span>, <span style="color:#a6e22e">job</span>)
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span>
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">dPrintf</span>(<span style="color:#e6db74">&#34;%+v\n&#34;</span>, <span style="color:#a6e22e">jobVars</span>)
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">jobVars</span>.<span style="color:#a6e22e">ImageLoc</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;&#34;</span> {
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">failJob</span>(<span style="color:#a6e22e">client</span>, <span style="color:#a6e22e">job</span>)
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span>
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Get the image from the storage
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#a6e22e">resp</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">Get</span>(<span style="color:#a6e22e">jobVars</span>.<span style="color:#a6e22e">ImageLoc</span>)
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">failJob</span>(<span style="color:#a6e22e">client</span>, <span style="color:#a6e22e">job</span>)
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span>
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">defer</span> <span style="color:#a6e22e">resp</span>.<span style="color:#a6e22e">Body</span>.<span style="color:#a6e22e">Close</span>()
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">emote</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">doAIOnPic</span>(<span style="color:#f92672">&amp;</span><span style="color:#a6e22e">resp</span>.<span style="color:#a6e22e">Body</span>)
+</span></span></code></pre></div><p>That last bit is where the actual work takes place, so let&rsquo;s look a little more closely at that.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>  <span style="color:#a6e22e">client</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">vision</span>.<span style="color:#a6e22e">NewImageAnnotatorClient</span>(<span style="color:#a6e22e">ctx</span>, <span style="color:#a6e22e">options</span>)
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">log</span>.<span style="color:#a6e22e">Fatalf</span>(<span style="color:#e6db74">&#34;Failed to create client: %v&#34;</span>, <span style="color:#a6e22e">err</span>)
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">defer</span> <span style="color:#a6e22e">client</span>.<span style="color:#a6e22e">Close</span>()
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">im</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">vision</span>.<span style="color:#a6e22e">NewImageFromReader</span>(<span style="color:#a6e22e">io</span>.<span style="color:#a6e22e">Reader</span>(<span style="color:#f92672">*</span><span style="color:#a6e22e">image</span>))
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">log</span>.<span style="color:#a6e22e">Fatalf</span>(<span style="color:#e6db74">&#34;Failed to create image: %v&#34;</span>, <span style="color:#a6e22e">err</span>)
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">emotions</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">Emotions</span>{}
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">annotations</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">client</span>.<span style="color:#a6e22e">DetectFaces</span>(<span style="color:#a6e22e">ctx</span>, <span style="color:#a6e22e">im</span>, <span style="color:#66d9ef">nil</span>, <span style="color:#ae81ff">10</span>)
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;No faces found.&#34;</span>)
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">emotions</span>.<span style="color:#a6e22e">IsPicture</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">log</span>.<span style="color:#a6e22e">Fatalf</span>(<span style="color:#e6db74">&#34;Failed to detect faces: %v&#34;</span>, <span style="color:#a6e22e">err</span>)
+</span></span><span style="display:flex;"><span>	}
+</span></span></code></pre></div><p>We first create a Google Vision API <code>client</code> which we will use to submit the image, once we have that, we will create the new image from the URL we got as part of the process variables. This actually saves us some memory because we don&rsquo;t download the image, and then submit it but rather send a reference to the <code>Reader</code> object directly to the Google Vision API <code>NewImageFromReader</code> method. We also create a <code>emotions</code> variable to store the results of the Google Vision API.</p>
+<p>When we submit the image to Google, we will get back an <code>annotations</code> object from Google. We are not interested in everything in this object, so I created an <code>interestingAnnotations</code> JSON object that has the parameters we will use to dispense candy:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">interestingAnnotations</span> <span style="color:#66d9ef">struct</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">DetectionConfidence</span>    <span style="color:#66d9ef">float64</span> <span style="color:#e6db74">`json:&#34;detection_confidence&#34;`</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">LandmarkingConfidence</span>  <span style="color:#66d9ef">float64</span> <span style="color:#e6db74">`json:&#34;landmarking_confidence&#34;`</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">JoyLikelihood</span>          <span style="color:#66d9ef">int</span>     <span style="color:#e6db74">`json:&#34;joy_likelihood&#34;`</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">SorrowLikelihood</span>       <span style="color:#66d9ef">int</span>     <span style="color:#e6db74">`json:&#34;sorrow_likelihood&#34;`</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">AngerLikelihood</span>        <span style="color:#66d9ef">int</span>     <span style="color:#e6db74">`json:&#34;anger_likelihood&#34;`</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">SurpriseLikelihood</span>     <span style="color:#66d9ef">int</span>     <span style="color:#e6db74">`json:&#34;surprise_likelihood&#34;`</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">UnderExposedLikelihood</span> <span style="color:#66d9ef">int</span>     <span style="color:#e6db74">`json:&#34;under_exposed_likelihood&#34;`</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">BlurredLikelihood</span>      <span style="color:#66d9ef">int</span>     <span style="color:#e6db74">`json:&#34;blurred_likelihood&#34;`</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">HeadwearLikelihood</span>     <span style="color:#66d9ef">int</span>     <span style="color:#e6db74">`json:&#34;headwear_likelihood&#34;`</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>We can then go through the larger <code>annotations</code> object and gather the things we want:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span> <span style="color:#a6e22e">i</span>, <span style="color:#a6e22e">annotation</span> <span style="color:#f92672">:=</span> <span style="color:#66d9ef">range</span> <span style="color:#a6e22e">annotations</span> {
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">goodStuff</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">interestingAnnotations</span>{}
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">data</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">json</span>.<span style="color:#a6e22e">Marshal</span>(<span style="color:#a6e22e">annotation</span>)
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+</span></span><span style="display:flex;"><span>			<span style="color:#a6e22e">log</span>.<span style="color:#a6e22e">Fatal</span>(<span style="color:#a6e22e">err</span>)
+</span></span><span style="display:flex;"><span>		}
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">err</span> = <span style="color:#a6e22e">json</span>.<span style="color:#a6e22e">Unmarshal</span>(<span style="color:#a6e22e">data</span>, <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">goodStuff</span>)
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+</span></span><span style="display:flex;"><span>			<span style="color:#a6e22e">log</span>.<span style="color:#a6e22e">Fatal</span>(<span style="color:#a6e22e">err</span>)
+</span></span><span style="display:flex;"><span>		}
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">dPrintln</span>(<span style="color:#e6db74">&#34;  Face&#34;</span>, <span style="color:#a6e22e">i</span>)
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">emotions</span>.<span style="color:#a6e22e">Anger</span> = <span style="color:#a6e22e">annotation</span>.<span style="color:#a6e22e">AngerLikelihood</span>.<span style="color:#a6e22e">String</span>()
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">emotions</span>.<span style="color:#a6e22e">AngerNumber</span> = <span style="color:#a6e22e">goodStuff</span>.<span style="color:#a6e22e">AngerLikelihood</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">dPrintln</span>(<span style="color:#e6db74">&#34;    Anger:&#34;</span>, <span style="color:#a6e22e">annotation</span>.<span style="color:#a6e22e">AngerLikelihood</span>)
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">emotions</span>.<span style="color:#a6e22e">Joy</span> = <span style="color:#a6e22e">annotation</span>.<span style="color:#a6e22e">JoyLikelihood</span>.<span style="color:#a6e22e">String</span>()
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">emotions</span>.<span style="color:#a6e22e">JoyNumber</span> = <span style="color:#a6e22e">goodStuff</span>.<span style="color:#a6e22e">JoyLikelihood</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">dPrintln</span>(<span style="color:#e6db74">&#34;    Joy:&#34;</span>, <span style="color:#a6e22e">annotation</span>.<span style="color:#a6e22e">JoyLikelihood</span>)
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">emotions</span>.<span style="color:#a6e22e">Surprise</span> = <span style="color:#a6e22e">annotation</span>.<span style="color:#a6e22e">SurpriseLikelihood</span>.<span style="color:#a6e22e">String</span>()
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">emotions</span>.<span style="color:#a6e22e">SurpriseNumber</span> = <span style="color:#a6e22e">goodStuff</span>.<span style="color:#a6e22e">SurpriseLikelihood</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">dPrintln</span>(<span style="color:#e6db74">&#34;    Surprise:&#34;</span>, <span style="color:#a6e22e">annotation</span>.<span style="color:#a6e22e">SurpriseLikelihood</span>)
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">emotions</span>.<span style="color:#a6e22e">Sorrow</span> = <span style="color:#a6e22e">annotation</span>.<span style="color:#a6e22e">SorrowLikelihood</span>.<span style="color:#a6e22e">String</span>()
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">emotions</span>.<span style="color:#a6e22e">SorrowNumber</span> = <span style="color:#a6e22e">goodStuff</span>.<span style="color:#a6e22e">SorrowLikelihood</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">dPrintln</span>(<span style="color:#e6db74">&#34;    Sorrow:&#34;</span>, <span style="color:#a6e22e">annotation</span>.<span style="color:#a6e22e">SorrowLikelihood</span>)
+</span></span><span style="display:flex;"><span>	}
+</span></span></code></pre></div><p>We will then return this <code>emotions</code> object, from which we will submit the task variables:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>  <span style="color:#a6e22e">variables</span> <span style="color:#f92672">:=</span> make(<span style="color:#66d9ef">map</span>[<span style="color:#66d9ef">string</span>]<span style="color:#66d9ef">interface</span>{})
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">variables</span>[<span style="color:#e6db74">&#34;isPicture&#34;</span>] = <span style="color:#a6e22e">emote</span>.<span style="color:#a6e22e">IsPicture</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">variables</span>[<span style="color:#e6db74">&#34;Joy&#34;</span>] = <span style="color:#a6e22e">emote</span>.<span style="color:#a6e22e">Joy</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">variables</span>[<span style="color:#e6db74">&#34;JoyNumber&#34;</span>] = <span style="color:#a6e22e">emote</span>.<span style="color:#a6e22e">JoyNumber</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">variables</span>[<span style="color:#e6db74">&#34;Anger&#34;</span>] = <span style="color:#a6e22e">emote</span>.<span style="color:#a6e22e">Anger</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">variables</span>[<span style="color:#e6db74">&#34;AngerNumber&#34;</span>] = <span style="color:#a6e22e">emote</span>.<span style="color:#a6e22e">AngerNumber</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">variables</span>[<span style="color:#e6db74">&#34;Surprise&#34;</span>] = <span style="color:#a6e22e">emote</span>.<span style="color:#a6e22e">Surprise</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">variables</span>[<span style="color:#e6db74">&#34;SurpriseNumber&#34;</span>] = <span style="color:#a6e22e">emote</span>.<span style="color:#a6e22e">SurpriseNumber</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">variables</span>[<span style="color:#e6db74">&#34;Sorrow&#34;</span>] = <span style="color:#a6e22e">emote</span>.<span style="color:#a6e22e">Sorrow</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">variables</span>[<span style="color:#e6db74">&#34;SorrowNumber&#34;</span>] = <span style="color:#a6e22e">emote</span>.<span style="color:#a6e22e">SorrowNumber</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">dPrintf</span>(<span style="color:#e6db74">&#34;%+v\n&#34;</span>, <span style="color:#a6e22e">variables</span>)
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">request</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">client</span>.<span style="color:#a6e22e">NewCompleteJobCommand</span>().<span style="color:#a6e22e">JobKey</span>(<span style="color:#a6e22e">jobKey</span>).<span style="color:#a6e22e">VariablesFromMap</span>(<span style="color:#a6e22e">variables</span>)
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">failJob</span>(<span style="color:#a6e22e">client</span>, <span style="color:#a6e22e">job</span>)
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span>
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">dPrintln</span>(<span style="color:#e6db74">&#34;Complete job&#34;</span>, <span style="color:#a6e22e">jobKey</span>, <span style="color:#e6db74">&#34;of type&#34;</span>, <span style="color:#a6e22e">job</span>.<span style="color:#a6e22e">Type</span>)
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">ctx</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">context</span>.<span style="color:#a6e22e">Background</span>()
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">_</span>, <span style="color:#a6e22e">err</span> = <span style="color:#a6e22e">request</span>.<span style="color:#a6e22e">Send</span>(<span style="color:#a6e22e">ctx</span>)
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+</span></span><span style="display:flex;"><span>		panic(<span style="color:#a6e22e">err</span>)
+</span></span><span style="display:flex;"><span>	}
+</span></span></code></pre></div><p>I&rsquo;m returning the <code>String</code> values, but when we look at the DMN table you will see that they are unused. We could use them in the process if we wanted to, but for this exercise we will just use the <code>Number</code> values.</p>
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/camunda-workshop/exercise6/a_new_model/" title="A New Model"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/camunda-workshop/exercise6/making_decisions/" title="Making Decisions" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/camunda-workshop/js/clipboard.min.js?1651015392"></script>
+    <script src="/camunda-workshop/js/perfect-scrollbar.min.js?1651015392"></script>
+    <script src="/camunda-workshop/js/perfect-scrollbar.jquery.min.js?1651015392"></script>
+    <script src="/camunda-workshop/js/jquery.sticky.js?1651015392"></script>
+    <script src="/camunda-workshop/js/featherlight.min.js?1651015392"></script>
+    <script src="/camunda-workshop/js/highlight.pack.js?1651015392"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/camunda-workshop/js/modernizr.custom-3.6.0.js?1651015392"></script>
+    <script src="/camunda-workshop/js/learn.js?1651015392"></script>
+    <script src="/camunda-workshop/js/hugo-learn.js?1651015392"></script>
+    
+        
+            <script src="/camunda-workshop/mermaid/mermaid.js?1651015392"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    
+
+    
+<script type="text/javascript">
+  var sc_project = 12747505;
+  var sc_invisible = 1;
+  var sc_security = "ec9c0e17";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+<noscript>
+  <div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img
+        class="statcounter" src="https://c.statcounter.com/12747505/0/ec9c0e17/1/" alt="Web Analytics"
+        referrerPolicy="no-referrer-when-downgrade"></a></div>
+</noscript>
+
+  </body>
+</html>
+

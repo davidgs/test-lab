@@ -1,0 +1,1440 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.94.2" />
+    <meta name="description" content="">
+
+
+    <link rel="icon" href="/camunda-workshop/images/favicon.png" type="image/png">
+
+    <title>Camunda Platform 8 :: Camunda IoT Workshop</title>
+
+    
+    <link href="/camunda-workshop/css/nucleus.css?1651015392" rel="stylesheet">
+    <link href="/camunda-workshop/css/fontawesome-all.min.css?1651015392" rel="stylesheet">
+    <link href="/camunda-workshop/css/hybrid.css?1651015392" rel="stylesheet">
+    <link href="/camunda-workshop/css/featherlight.min.css?1651015392" rel="stylesheet">
+    <link href="/camunda-workshop/css/perfect-scrollbar.min.css?1651015392" rel="stylesheet">
+    <link href="/camunda-workshop/css/auto-complete.css?1651015392" rel="stylesheet">
+    <link href="/camunda-workshop/css/atom-one-dark-reasonable.css?1651015392" rel="stylesheet">
+    <link href="/camunda-workshop/css/theme.css?1651015392" rel="stylesheet">
+    <link href="/camunda-workshop/css/tabs.css?1651015392" rel="stylesheet">
+    <link href="/camunda-workshop/css/hugo-theme.css?1651015392" rel="stylesheet">
+    
+    
+
+    <script src="/camunda-workshop/js/jquery-3.3.1.min.js?1651015392"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/camunda-workshop/exercise1/camunda_platform_8/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a href=".."><img src="/images/Logo_Black.png"></a>
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/camunda-workshop/js/lunr.min.js?1651015392"></script>
+<script type="text/javascript" src="/camunda-workshop/js/auto-complete.js?1651015392"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/davidgs.com\/camunda-workshop";
+    
+</script>
+<script type="text/javascript" src="/camunda-workshop/js/search.js?1651015392"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/'><i class='fas fa-home'></i> Home</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/camunda-workshop/exercise1/" title="Exercise 1" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/camunda-workshop/exercise1/">
+          <b>1. </b>Exercise 1
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise1/camunda_platform_8/" title="Camunda Platform 8" class="dd-item active">
+        <a href="/camunda-workshop/exercise1/camunda_platform_8/">
+        <b>A. </b>Camunda Platform 8
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise1/google_vision_ai/" title="Google Vision AI" class="dd-item ">
+        <a href="/camunda-workshop/exercise1/google_vision_ai/">
+        <b>B. </b>Google Vision AI
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/camunda-workshop/exercise2/" title="Exercise 2" class="dd-item
+        
+        
+        
+        ">
+      <a href="/camunda-workshop/exercise2/">
+          <b>2. </b>Exercise 2
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise2/setup/" title="Setup" class="dd-item ">
+        <a href="/camunda-workshop/exercise2/setup/">
+        <b>A. </b>Setup
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise2/testing/" title="Testing" class="dd-item ">
+        <a href="/camunda-workshop/exercise2/testing/">
+        <b>B. </b>Testing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/camunda-workshop/exercise3/" title="Exercise 3" class="dd-item
+        
+        
+        
+        ">
+      <a href="/camunda-workshop/exercise3/">
+          <b>3. </b>Exercise 3
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise3/building_hardware/" title="Building The Hardware" class="dd-item ">
+        <a href="/camunda-workshop/exercise3/building_hardware/">
+        <b>A. </b>Building The Hardware
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise3/configuring_hardware/" title="Configuring The Hardware" class="dd-item ">
+        <a href="/camunda-workshop/exercise3/configuring_hardware/">
+        <b>B. </b>Configuring The Hardware
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise3/software_settings/" title="Software Settings" class="dd-item ">
+        <a href="/camunda-workshop/exercise3/software_settings/">
+        <b>C. </b>Software Settings
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise3/troubleshooting/" title="Troubleshooting" class="dd-item ">
+        <a href="/camunda-workshop/exercise3/troubleshooting/">
+        <b>D. </b>Troubleshooting
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/camunda-workshop/exercise4/" title="Exercise 4" class="dd-item
+        
+        
+        
+        ">
+      <a href="/camunda-workshop/exercise4/">
+          <b>4. </b>Exercise 4
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise4/starting_a_process_instance/" title="Starting A Process Instance" class="dd-item ">
+        <a href="/camunda-workshop/exercise4/starting_a_process_instance/">
+        <b>A. </b>Starting A Process Instance
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise4/completing_tasks/" title="Completing Tasks" class="dd-item ">
+        <a href="/camunda-workshop/exercise4/completing_tasks/">
+        <b>B. </b>Completing Tasks
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise4/testing_a_process_instance/" title="Testing A Process Instance" class="dd-item ">
+        <a href="/camunda-workshop/exercise4/testing_a_process_instance/">
+        <b>C. </b>Testing A Process Instance
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise4/lessons_learned/" title="Lessons Learned" class="dd-item ">
+        <a href="/camunda-workshop/exercise4/lessons_learned/">
+        <b>D. </b>Lessons Learned
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/camunda-workshop/exercise5/" title="Exercise 5" class="dd-item
+        
+        
+        
+        ">
+      <a href="/camunda-workshop/exercise5/">
+          <b>5. </b>Exercise 5
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise5/creating_a_decision_table/" title="Creating A Decision Table" class="dd-item ">
+        <a href="/camunda-workshop/exercise5/creating_a_decision_table/">
+        <b>A. </b>Creating A Decision Table
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise5/creating_a_form/" title="Creating A Form" class="dd-item ">
+        <a href="/camunda-workshop/exercise5/creating_a_form/">
+        <b>B. </b>Creating A Form
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise5/creating_a_model/" title="The Simplified Model" class="dd-item ">
+        <a href="/camunda-workshop/exercise5/creating_a_model/">
+        <b>C. </b>The Simplified Model
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise5/deploying_the_process/" title="Deploying the process" class="dd-item ">
+        <a href="/camunda-workshop/exercise5/deploying_the_process/">
+        <b>D. </b>Deploying the process
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise5/starting_the_process/" title="Starting the process" class="dd-item ">
+        <a href="/camunda-workshop/exercise5/starting_the_process/">
+        <b>E. </b>Starting the process
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise5/testing_the_process/" title="Testing the Process" class="dd-item ">
+        <a href="/camunda-workshop/exercise5/testing_the_process/">
+        <b>F. </b>Testing the Process
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise5/conclusions/" title="Conclusions" class="dd-item ">
+        <a href="/camunda-workshop/exercise5/conclusions/">
+        <b>E. </b>Conclusions
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/camunda-workshop/exercise6/" title="Exercise 6" class="dd-item
+        
+        
+        
+        ">
+      <a href="/camunda-workshop/exercise6/">
+          <b>6. </b>Exercise 6
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise6/a_new_model/" title="A New Model" class="dd-item ">
+        <a href="/camunda-workshop/exercise6/a_new_model/">
+        <b>A. </b>A New Model
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise6/google_ai/" title="Google AI Process" class="dd-item ">
+        <a href="/camunda-workshop/exercise6/google_ai/">
+        <b>B. </b>Google AI Process
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise6/making_decisions/" title="Making Decisions" class="dd-item ">
+        <a href="/camunda-workshop/exercise6/making_decisions/">
+        <b>C. </b>Making Decisions
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise6/conclusions/" title="Conclusions" class="dd-item ">
+        <a href="/camunda-workshop/exercise6/conclusions/">
+        <b>D. </b>Conclusions
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>Workshop content © <a href="https://davidgs.com" target=_blank>David G. Simmons</a>, 2022</p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/camunda-workshop/'>Camunda IoT Workshop</a> > <a href='/camunda-workshop/exercise1/'>Exercise 1</a> > Camunda Platform 8
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#camunda-platform-8-c8-account">Camunda Platform 8 (C8) account</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Camunda Platform 8
+            </h1>
+          
+
+        
+
+
+<h3 id="camunda-platform-8-c8-account">Camunda Platform 8 (C8) account</h3>
+<p>The first step, of course, is to <a href="https://accounts.cloud.camunda.io/signup?utm_campaign=Trial.CamundaPlatform8.EN&amp;utm_source=april_2022_workshop&amp;utm_medium=referral&amp;utm_term=DavidSimmons">Sign up for an account</a>.</p>
+<p>This is a free trial account which will give you 30-days to try out Camunda Platform 8. You can use this account to create and deploy processes. It is the account you&rsquo;ll be using throughout this lab.</p>
+<p>Once you&rsquo;ve clicked on the link above, you will out the form to create your account:</p>
+<p><img src="/images/signup.png" alt="singup form"></p>
+<p>Once you&rsquo;ve signed up, you will be sent a confirmation email with a link to activate your account. Clicking on the link in that email will take you to the login screen where you will enter the email address and password you created in the first step.</p>
+<p><img src="/images/login.png" alt="login screen"></p>
+<p>Once logged in, you will see your Console page. This is where you will see your account information and the processes you have deployed. So far, you won&rsquo;t have any clusters or processes, so let&rsquo;s go ahead and create one.</p>
+<p>Under the Clusters area, you will see that you have 0 Clusters, and a link to <code>View All</code> which will take you to the page where you can create a new cluster. Click on the <code>Create New Cluster</code> button. You can name your cluster whatever you want, but it should be unique.</p>
+<p><img src="/images/create-cluster.png" alt="create cluster"></p>
+<p>Finally, click on the <code>Create</code> button. You should be directed back to the Clusters page where you will see your cluster being created.</p>
+<p>This process can take several minutes as the cluster is provisioned in the cloud and the cluster is configured and started.</p>
+<p><img src="/images/cluster-creation.png" alt="cluster created"></p>
+<p>If you click on the cluster while it is being created, you will see more details about the cluster, and you will be able to create the Client Credentials that you will need to connect to the cluster.</p>
+<p><img src="/images/cluster-details.png" alt="cluster details"></p>
+<p>You should click on the <code>API</code> tab, and then click the <code>Create</code> button in order to create your credentials. You can name your credentials whatever you want, but it should be unique.</p>
+<p>You will then be presented with a screen listing your credentials. Click the <code>Download Credentials</code> button to save the credentials to your computer.</p>
+<p><img src="/images/save-credentials.png" alt="Save Credentials"></p>
+<p><strong>Important:</strong> You will need these credentials for the rest of the exercises, and you will <em>not</em> be able to see your <code>Client Secret</code> again after you download them.</p>
+<p>You can view the rest of your credentials in the <code>View</code> tab, but your <code>CLient Secret</code> will not be visible.</p>
+<p><img src="/images/view-credentials.png" alt="View Credentials"></p>
+<p>Once your credentials are created and your cluster has finished being provisioned, your Console page will show you the cluster you created, along with links to the Modeler, the Task List, Operate (where running tasks are shown), and Optimize where you can create reports, etc. for your cluster.</p>
+<p>At this point your cluster is ready to use!</p>
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/camunda-workshop/exercise1/" title="Exercise 1"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/camunda-workshop/exercise1/google_vision_ai/" title="Google Vision AI" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/camunda-workshop/js/clipboard.min.js?1651015392"></script>
+    <script src="/camunda-workshop/js/perfect-scrollbar.min.js?1651015392"></script>
+    <script src="/camunda-workshop/js/perfect-scrollbar.jquery.min.js?1651015392"></script>
+    <script src="/camunda-workshop/js/jquery.sticky.js?1651015392"></script>
+    <script src="/camunda-workshop/js/featherlight.min.js?1651015392"></script>
+    <script src="/camunda-workshop/js/highlight.pack.js?1651015392"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/camunda-workshop/js/modernizr.custom-3.6.0.js?1651015392"></script>
+    <script src="/camunda-workshop/js/learn.js?1651015392"></script>
+    <script src="/camunda-workshop/js/hugo-learn.js?1651015392"></script>
+    
+        
+            <script src="/camunda-workshop/mermaid/mermaid.js?1651015392"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    
+
+    
+<script type="text/javascript">
+  var sc_project = 12747505;
+  var sc_invisible = 1;
+  var sc_security = "ec9c0e17";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+<noscript>
+  <div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img
+        class="statcounter" src="https://c.statcounter.com/12747505/0/ec9c0e17/1/" alt="Web Analytics"
+        referrerPolicy="no-referrer-when-downgrade"></a></div>
+</noscript>
+
+  </body>
+</html>
+

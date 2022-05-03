@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Camunda IoT Workshop</title>
+    <link>https://davidgs.com/camunda-workshop/</link>
+    <description>Recent content on Camunda IoT Workshop</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 26 Apr 2022 18:15:46 +0200</lastBuildDate><atom:link href="https://davidgs.com/camunda-workshop/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A New Model</title>
+      <link>https://davidgs.com/camunda-workshop/exercise6/a_new_model/</link>
+      <pubDate>Tue, 26 Apr 2022 20:44:07 +0200</pubDate>
+      
+      <guid>https://davidgs.com/camunda-workshop/exercise6/a_new_model/</guid>
+      <description>The New Process Since we are no longer using any forms, or any user tasks, our process is going to be very short and relatively simple.
+As you can see, we have one external task, followed by a decision table, followed by the task to dispense candy (if any candy is deserved, of course).
+This is, clearly, a much simplified and more efficient process that requires no human interaction. We can deploy this process and have it run, unattended, for as long as we want.</description>
+    </item>
+    
+    <item>
+      <title>Creating A Decision Table</title>
+      <link>https://davidgs.com/camunda-workshop/exercise5/creating_a_decision_table/</link>
+      <pubDate>Tue, 26 Apr 2022 20:03:28 +0200</pubDate>
+      
+      <guid>https://davidgs.com/camunda-workshop/exercise5/creating_a_decision_table/</guid>
+      <description>Decision Tables, or DMNN Of course the Decision Table for this exercise is already created for you, but let&amp;rsquo;s go through and look at it a little bit more in order to understand how it works.
+This decision table takes 3 inputs isCostume, Age, and Costume Rating that are used as input to the Determine Skittles Decision Table. These are all the variable we need in order to make a determination of how many Skittles to dispense.</description>
+    </item>
+    
+    <item>
+      <title>Starting A Process Instance</title>
+      <link>https://davidgs.com/camunda-workshop/exercise4/starting_a_process_instance/</link>
+      <pubDate>Tue, 26 Apr 2022 19:45:10 +0200</pubDate>
+      
+      <guid>https://davidgs.com/camunda-workshop/exercise4/starting_a_process_instance/</guid>
+      <description>Starting a Process Instance Now that we have deployed the model, we can use the Camera to start a process. It&amp;rsquo;s as simple as pressing the second button on your camera board! You should see the bright Flash LED come on and then the camera will take a picture.
+This picture will then be sent to a server process (that is running on my cloud server) and that server process will start your process instance with the picture you took.</description>
+    </item>
+    
+    <item>
+      <title>Building The Hardware</title>
+      <link>https://davidgs.com/camunda-workshop/exercise3/building_hardware/</link>
+      <pubDate>Tue, 26 Apr 2022 19:25:47 +0200</pubDate>
+      
+      <guid>https://davidgs.com/camunda-workshop/exercise3/building_hardware/</guid>
+      <description>Building the hardware It&amp;rsquo;s time to assemble the hardware for the lab, finally! Here&amp;rsquo;s what the entire contents of the kit look like:
+If you&amp;rsquo;re missing any pieces, please let me know. What you should have is: - 1 ESP32-Cam Board - 1 camera module - 1 programmer board - 1 breadboard - 2 10k ohm resistors - 2 tactile buttons (with colored covers) - 1 USB to TTL adapter - 11 jumper wires</description>
+    </item>
+    
+    <item>
+      <title>Camunda Platform 8</title>
+      <link>https://davidgs.com/camunda-workshop/exercise1/camunda_platform_8/</link>
+      <pubDate>Tue, 26 Apr 2022 18:31:55 +0200</pubDate>
+      
+      <guid>https://davidgs.com/camunda-workshop/exercise1/camunda_platform_8/</guid>
+      <description>Camunda Platform 8 (C8) account The first step, of course, is to Sign up for an account.
+This is a free trial account which will give you 30-days to try out Camunda Platform 8. You can use this account to create and deploy processes. It is the account you&amp;rsquo;ll be using throughout this lab.
+Once you&amp;rsquo;ve clicked on the link above, you will out the form to create your account:</description>
+    </item>
+    
+    <item>
+      <title>Creating A Form</title>
+      <link>https://davidgs.com/camunda-workshop/exercise5/creating_a_form/</link>
+      <pubDate>Tue, 26 Apr 2022 20:06:20 +0200</pubDate>
+      
+      <guid>https://davidgs.com/camunda-workshop/exercise5/creating_a_form/</guid>
+      <description>Creating the Improved Form Now that we have the decision table, it&amp;rsquo;s time to create the form that we will use. Since our goal here is to simplify the process and require less human interaction we&amp;rsquo;re going to combine everything into one form.
+It really is just all the elements from the previous forms (from Exercise 4). We&amp;rsquo;re simply going to do all the evaluations in one form.</description>
+    </item>
+    
+    <item>
+      <title>Completing Tasks</title>
+      <link>https://davidgs.com/camunda-workshop/exercise4/completing_tasks/</link>
+      <pubDate>Tue, 26 Apr 2022 19:44:45 +0200</pubDate>
+      
+      <guid>https://davidgs.com/camunda-workshop/exercise4/completing_tasks/</guid>
+      <description>Completing Tasks Now that the process has been started by your picture, you can go to the Task List tab in Camunda Platform 8 where you should now see a new Task:
+You will need to click the claim button in order to be able to make a selection on if this is a picture of a person in a costume or not.
+Once you click the Complete Task button the task will disappear from your task list.</description>
+    </item>
+    
+    <item>
+      <title>Configuring The Hardware</title>
+      <link>https://davidgs.com/camunda-workshop/exercise3/configuring_hardware/</link>
+      <pubDate>Tue, 26 Apr 2022 19:26:12 +0200</pubDate>
+      
+      <guid>https://davidgs.com/camunda-workshop/exercise3/configuring_hardware/</guid>
+      <description>Adding the Libraries Now that you&amp;rsquo;ve assembled the hardware, you&amp;rsquo;ll need to configure it to use in your process.
+We will need to connect it to WiFi and set the C8 process variables so that our camera can connect to our process and start jobs.
+This is a fairly easy process thanks to the WiFiManager library that we will be using.
+The first step is to open the Arduino IDE and open the CandyCam sketch.</description>
+    </item>
+    
+    <item>
+      <title>Setup</title>
+      <link>https://davidgs.com/camunda-workshop/exercise2/setup/</link>
+      <pubDate>Tue, 26 Apr 2022 19:04:26 +0200</pubDate>
+      
+      <guid>https://davidgs.com/camunda-workshop/exercise2/setup/</guid>
+      <description>Seting up the Worker The script-worker.go file is the solution here. It will start a task worker and listen for tasks from your process. When a task is received, it will execute the task and then complete the task.
+The task listener looks for 2 variables in the incoming job: count and add. If the count variable is missing, it will default to initializing it at 0. If the add variable is missing, it will default to adding 1 to the count variable.</description>
+    </item>
+    
+    <item>
+      <title>Google AI Process</title>
+      <link>https://davidgs.com/camunda-workshop/exercise6/google_ai/</link>
+      <pubDate>Tue, 26 Apr 2022 19:02:08 +0200</pubDate>
+      
+      <guid>https://davidgs.com/camunda-workshop/exercise6/google_ai/</guid>
+      <description>The Google AI Task The first thing that happens when a picture is submitted is that we execute a &amp;ldquo;Submit to Google AI&amp;rdquo; external task. This task takes the provided picture, submits it to Google&amp;rsquo;s Vision AI API, and returns the evaluated results to the model.
+To do this, we will submit the picture to Google&amp;rsquo;s Vision AI API. This is why we all enabled that API in our Google Console back in Exercise 1!</description>
+    </item>
+    
+    <item>
+      <title>Google Vision AI</title>
+      <link>https://davidgs.com/camunda-workshop/exercise1/google_vision_ai/</link>
+      <pubDate>Tue, 26 Apr 2022 18:42:12 +0200</pubDate>
+      
+      <guid>https://davidgs.com/camunda-workshop/exercise1/google_vision_ai/</guid>
+      <description>Google Cloud account Later on in this lab we will be using the Google Image AI service to process images. In order to use the service, you will need to create a Google Cloud account. If you already have a google account, you can use that account.
+You can login to your Google account, and then go to the Cloud Console where you can create a new project.
+Once your project is created, go to the Getting Started box and click the explore and enable APIs link.</description>
+    </item>
+    
+    <item>
+      <title>The Simplified Model</title>
+      <link>https://davidgs.com/camunda-workshop/exercise5/creating_a_model/</link>
+      <pubDate>Tue, 26 Apr 2022 20:17:41 +0200</pubDate>
+      
+      <guid>https://davidgs.com/camunda-workshop/exercise5/creating_a_model/</guid>
+      <description>Creating the Model The model is a much more simplified version of what we did in Exercise 4. We&amp;rsquo;re going to create a model that only one form and has one decision table.
+Note: Finding the decision id for the decision table can be a bit tricky. You can find it by opening the Decision Table, and clickin on the table itself, then looking in the Properties Panel under the General tab.</description>
+    </item>
+    
+    <item>
+      <title>Testing A Process Instance</title>
+      <link>https://davidgs.com/camunda-workshop/exercise4/testing_a_process_instance/</link>
+      <pubDate>Tue, 26 Apr 2022 19:45:38 +0200</pubDate>
+      
+      <guid>https://davidgs.com/camunda-workshop/exercise4/testing_a_process_instance/</guid>
+      <description>Testing the Process From within the Web Modeler you can always start an instance of the process to test it. You will need to click the Start Process button on the top right of the modeler and add a JSON object containing some information to start the process:
+{&amp;#34;imageLoc&amp;#34;: &amp;#34;https://davidgs.com:5050/pix/headshot.png&amp;#34;, &amp;#34;isPicture&amp;#34;: true } That picture exists, and will be used to start an instance of the process to be evaluated.</description>
+    </item>
+    
+    <item>
+      <title>Software Settings</title>
+      <link>https://davidgs.com/camunda-workshop/exercise3/software_settings/</link>
+      <pubDate>Tue, 26 Apr 2022 19:36:13 +0200</pubDate>
+      
+      <guid>https://davidgs.com/camunda-workshop/exercise3/software_settings/</guid>
+      <description>Configuring the Software Once the upload is complete, open the Serial Monitor and look for the line:
+*wm:[1] StartAP with SSID: ESP32_48BD9E7C You&amp;rsquo;re looking for that SSID specifically. You should now be able to go to your WiFi network and connect to that SSID. Once connected, look for the IP address you&amp;rsquo;ve been assigned, which should be something like 192.168.4.2. Point your web browser at the Gateway Address for that IP address (it will be the same address, but ending in 1, so in the above example it should be 192.</description>
+    </item>
+    
+    <item>
+      <title>Testing</title>
+      <link>https://davidgs.com/camunda-workshop/exercise2/testing/</link>
+      <pubDate>Tue, 26 Apr 2022 19:04:33 +0200</pubDate>
+      
+      <guid>https://davidgs.com/camunda-workshop/exercise2/testing/</guid>
+      <description>Testing your Script Worker To make sure that your script worker is working correctly, let&amp;rsquo;s run a few tests.
+First, we will need to create and deploy a process that will call your script worker task.
+in the script-worker.go file set the PROC_NAME constant to AddOneTask, build and start your script-worker.
+There is a file test-script-worker.bpmn in this directory that you can use to create a test process. You can drag-drop this file into the Modeler tab of Camunda Cloud.</description>
+    </item>
+    
+    <item>
+      <title>Making Decisions</title>
+      <link>https://davidgs.com/camunda-workshop/exercise6/making_decisions/</link>
+      <pubDate>Tue, 26 Apr 2022 19:02:35 +0200</pubDate>
+      
+      <guid>https://davidgs.com/camunda-workshop/exercise6/making_decisions/</guid>
+      <description>Making Decisions Now that we are using a different criteria for our decision, we need to create an entirely new decision table in order to decide how much candy to distribute.
+Woah! That&amp;rsquo;s a complicated table! In fact, it&amp;rsquo;s not just one table but a whole series of them, all feeding into one final table that will decide how much candy to distribute.
+Note: the smaller tables contain my proprietary algorithm for giving out candy based on the detected mood of the person in the picture but you are welcome to create your own by modifying those tables however you wish.</description>
+    </item>
+    
+    <item>
+      <title>Conclusions</title>
+      <link>https://davidgs.com/camunda-workshop/exercise6/conclusions/</link>
+      <pubDate>Tue, 26 Apr 2022 20:47:05 +0200</pubDate>
+      
+      <guid>https://davidgs.com/camunda-workshop/exercise6/conclusions/</guid>
+      <description>What have we learned? I hope that this lab has been both interesting as well as useful.
+We&amp;rsquo;ve seen how we can iterate on a process that started out as very complicated and cumbersome, streamlined it a bit to make it easier, and then finally employed some image AI technology to make it all automated, cutting out human interaction entirely.
+Some key concepts I hope you&amp;rsquo;ve learned:
+ How to use BPMN to automate a process How to create external task workers to handle tasks How to use Forms to allow humans to interact with a process How to automate decisions with DMN Decision tables How to completely automate a process with AI and DMN Decision tables  If you have questions or comments, please feel free to reach out to me at @jdavid.</description>
+    </item>
+    
+    <item>
+      <title>Deploying the process</title>
+      <link>https://davidgs.com/camunda-workshop/exercise5/deploying_the_process/</link>
+      <pubDate>Tue, 26 Apr 2022 20:02:28 +0200</pubDate>
+      
+      <guid>https://davidgs.com/camunda-workshop/exercise5/deploying_the_process/</guid>
+      <description>Deploying the improved Model Now that we have out decision table, our form, and our model, it&amp;rsquo;s time to get it all up and running. First, you&amp;rsquo;ll need to deploy the decision table. Open the decision table in the modeler, and click the Deploy Diagram button.
+Once the Decision Table is deployed, you&amp;rsquo;ll do the same thing with the form. Open the form in the modeler, and click the Deploy Diagram button.</description>
+    </item>
+    
+    <item>
+      <title>Lessons Learned</title>
+      <link>https://davidgs.com/camunda-workshop/exercise4/lessons_learned/</link>
+      <pubDate>Tue, 26 Apr 2022 19:44:24 +0200</pubDate>
+      
+      <guid>https://davidgs.com/camunda-workshop/exercise4/lessons_learned/</guid>
+      <description>Lessons Learned As you have noticed, this is a very user-intensive task. You have to repeatedly claim a task and answer a question about the picture. This is a very time consuming process. In the next exercise we will see how we can streamline this process by using DMN decision tables.</description>
+    </item>
+    
+    <item>
+      <title>Troubleshooting</title>
+      <link>https://davidgs.com/camunda-workshop/exercise3/troubleshooting/</link>
+      <pubDate>Tue, 26 Apr 2022 19:29:27 +0200</pubDate>
+      
+      <guid>https://davidgs.com/camunda-workshop/exercise3/troubleshooting/</guid>
+      <description>Troubleshooting If you&amp;rsquo;re having trouble with the port &amp;ldquo;timing out&amp;rdquo;, try reducing the port speed to 115200. If you&amp;rsquo;re unable to reduce the port speed, you can open a terminal and run the following command:
+$ esptool.py -p YOUR_PORT -b 115200 ... and then copy/paste the failed command from the Arduino IDE window (the part after the -p section) into the terminal.</description>
+    </item>
+    
+    <item>
+      <title>Starting the process</title>
+      <link>https://davidgs.com/camunda-workshop/exercise5/starting_the_process/</link>
+      <pubDate>Tue, 26 Apr 2022 20:00:58 +0200</pubDate>
+      
+      <guid>https://davidgs.com/camunda-workshop/exercise5/starting_the_process/</guid>
+      <description>Starting the Process The process ID (unless you changed it in the model) is exercise-5-process. If you hold down the second button on your camera board for about 10 seconds the board will reset itself and you can repeat the steps from Exercise 3 to configure the board to start the process.
+ Enter the WiFi credentials Enter your Camunda Platform 8 API Keys from Exercise 1 Save the configuration Press the Picture button  If you go back to your Camunda Platform 8 Console now, and look under the Operate tab, you should see your Exercise 5 process running.</description>
+    </item>
+    
+    <item>
+      <title>Testing the Process</title>
+      <link>https://davidgs.com/camunda-workshop/exercise5/testing_the_process/</link>
+      <pubDate>Tue, 26 Apr 2022 20:01:44 +0200</pubDate>
+      
+      <guid>https://davidgs.com/camunda-workshop/exercise5/testing_the_process/</guid>
+      <description>Running the Process Without the Camera From within the Web Modeler you can always start an instance of the process to test it. You will need to click the Start Process button on the top right of the modeler and add a JSON object containing some information to start the process:
+{&amp;#34;imageLoc&amp;#34;: &amp;#34;https://davidgs.com:5050/pix/headshot.png&amp;#34;, &amp;#34;isPicture&amp;#34;: true } That picture exists, and will be used to start an instance of the process to be evaluated.</description>
+    </item>
+    
+    <item>
+      <title>Conclusions</title>
+      <link>https://davidgs.com/camunda-workshop/exercise5/conclusions/</link>
+      <pubDate>Tue, 26 Apr 2022 19:59:38 +0200</pubDate>
+      
+      <guid>https://davidgs.com/camunda-workshop/exercise5/conclusions/</guid>
+      <description>Conclusion We have now seen how using a DMN Decision table can greatly simplify and streamline the entire process. We have reduced the human interaction to a single form, and we have a single DMN table to make all the decisions before dispensing Skittles.
+In the next exercise we will see how we can remove all human interaction from the process and turn everything over to some Image AI technology to make all the decisions.</description>
+    </item>
+    
+  </channel>
+</rss>

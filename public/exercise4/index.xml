@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Exercise 4 on Camunda IoT Workshop</title>
+    <link>https://davidgs.com/camunda-workshop/exercise4/</link>
+    <description>Recent content in Exercise 4 on Camunda IoT Workshop</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 26 Apr 2022 18:47:49 +0200</lastBuildDate><atom:link href="https://davidgs.com/camunda-workshop/exercise4/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Starting A Process Instance</title>
+      <link>https://davidgs.com/camunda-workshop/exercise4/starting_a_process_instance/</link>
+      <pubDate>Tue, 26 Apr 2022 19:45:10 +0200</pubDate>
+      
+      <guid>https://davidgs.com/camunda-workshop/exercise4/starting_a_process_instance/</guid>
+      <description>Starting a Process Instance Now that we have deployed the model, we can use the Camera to start a process. It&amp;rsquo;s as simple as pressing the second button on your camera board! You should see the bright Flash LED come on and then the camera will take a picture.
+This picture will then be sent to a server process (that is running on my cloud server) and that server process will start your process instance with the picture you took.</description>
+    </item>
+    
+    <item>
+      <title>Completing Tasks</title>
+      <link>https://davidgs.com/camunda-workshop/exercise4/completing_tasks/</link>
+      <pubDate>Tue, 26 Apr 2022 19:44:45 +0200</pubDate>
+      
+      <guid>https://davidgs.com/camunda-workshop/exercise4/completing_tasks/</guid>
+      <description>Completing Tasks Now that the process has been started by your picture, you can go to the Task List tab in Camunda Platform 8 where you should now see a new Task:
+You will need to click the claim button in order to be able to make a selection on if this is a picture of a person in a costume or not.
+Once you click the Complete Task button the task will disappear from your task list.</description>
+    </item>
+    
+    <item>
+      <title>Testing A Process Instance</title>
+      <link>https://davidgs.com/camunda-workshop/exercise4/testing_a_process_instance/</link>
+      <pubDate>Tue, 26 Apr 2022 19:45:38 +0200</pubDate>
+      
+      <guid>https://davidgs.com/camunda-workshop/exercise4/testing_a_process_instance/</guid>
+      <description>Testing the Process From within the Web Modeler you can always start an instance of the process to test it. You will need to click the Start Process button on the top right of the modeler and add a JSON object containing some information to start the process:
+{&amp;#34;imageLoc&amp;#34;: &amp;#34;https://davidgs.com:5050/pix/headshot.png&amp;#34;, &amp;#34;isPicture&amp;#34;: true } That picture exists, and will be used to start an instance of the process to be evaluated.</description>
+    </item>
+    
+    <item>
+      <title>Lessons Learned</title>
+      <link>https://davidgs.com/camunda-workshop/exercise4/lessons_learned/</link>
+      <pubDate>Tue, 26 Apr 2022 19:44:24 +0200</pubDate>
+      
+      <guid>https://davidgs.com/camunda-workshop/exercise4/lessons_learned/</guid>
+      <description>Lessons Learned As you have noticed, this is a very user-intensive task. You have to repeatedly claim a task and answer a question about the picture. This is a very time consuming process. In the next exercise we will see how we can streamline this process by using DMN decision tables.</description>
+    </item>
+    
+  </channel>
+</rss>

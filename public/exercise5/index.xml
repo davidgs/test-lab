@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Exercise 5 on Camunda IoT Workshop</title>
+    <link>https://davidgs.com/camunda-workshop/exercise5/</link>
+    <description>Recent content in Exercise 5 on Camunda IoT Workshop</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 26 Apr 2022 18:47:58 +0200</lastBuildDate><atom:link href="https://davidgs.com/camunda-workshop/exercise5/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Creating A Decision Table</title>
+      <link>https://davidgs.com/camunda-workshop/exercise5/creating_a_decision_table/</link>
+      <pubDate>Tue, 26 Apr 2022 20:03:28 +0200</pubDate>
+      
+      <guid>https://davidgs.com/camunda-workshop/exercise5/creating_a_decision_table/</guid>
+      <description>Decision Tables, or DMNN Of course the Decision Table for this exercise is already created for you, but let&amp;rsquo;s go through and look at it a little bit more in order to understand how it works.
+This decision table takes 3 inputs isCostume, Age, and Costume Rating that are used as input to the Determine Skittles Decision Table. These are all the variable we need in order to make a determination of how many Skittles to dispense.</description>
+    </item>
+    
+    <item>
+      <title>Creating A Form</title>
+      <link>https://davidgs.com/camunda-workshop/exercise5/creating_a_form/</link>
+      <pubDate>Tue, 26 Apr 2022 20:06:20 +0200</pubDate>
+      
+      <guid>https://davidgs.com/camunda-workshop/exercise5/creating_a_form/</guid>
+      <description>Creating the Improved Form Now that we have the decision table, it&amp;rsquo;s time to create the form that we will use. Since our goal here is to simplify the process and require less human interaction we&amp;rsquo;re going to combine everything into one form.
+It really is just all the elements from the previous forms (from Exercise 4). We&amp;rsquo;re simply going to do all the evaluations in one form.</description>
+    </item>
+    
+    <item>
+      <title>The Simplified Model</title>
+      <link>https://davidgs.com/camunda-workshop/exercise5/creating_a_model/</link>
+      <pubDate>Tue, 26 Apr 2022 20:17:41 +0200</pubDate>
+      
+      <guid>https://davidgs.com/camunda-workshop/exercise5/creating_a_model/</guid>
+      <description>Creating the Model The model is a much more simplified version of what we did in Exercise 4. We&amp;rsquo;re going to create a model that only one form and has one decision table.
+Note: Finding the decision id for the decision table can be a bit tricky. You can find it by opening the Decision Table, and clickin on the table itself, then looking in the Properties Panel under the General tab.</description>
+    </item>
+    
+    <item>
+      <title>Deploying the process</title>
+      <link>https://davidgs.com/camunda-workshop/exercise5/deploying_the_process/</link>
+      <pubDate>Tue, 26 Apr 2022 20:02:28 +0200</pubDate>
+      
+      <guid>https://davidgs.com/camunda-workshop/exercise5/deploying_the_process/</guid>
+      <description>Deploying the improved Model Now that we have out decision table, our form, and our model, it&amp;rsquo;s time to get it all up and running. First, you&amp;rsquo;ll need to deploy the decision table. Open the decision table in the modeler, and click the Deploy Diagram button.
+Once the Decision Table is deployed, you&amp;rsquo;ll do the same thing with the form. Open the form in the modeler, and click the Deploy Diagram button.</description>
+    </item>
+    
+    <item>
+      <title>Starting the process</title>
+      <link>https://davidgs.com/camunda-workshop/exercise5/starting_the_process/</link>
+      <pubDate>Tue, 26 Apr 2022 20:00:58 +0200</pubDate>
+      
+      <guid>https://davidgs.com/camunda-workshop/exercise5/starting_the_process/</guid>
+      <description>Starting the Process The process ID (unless you changed it in the model) is exercise-5-process. If you hold down the second button on your camera board for about 10 seconds the board will reset itself and you can repeat the steps from Exercise 3 to configure the board to start the process.
+ Enter the WiFi credentials Enter your Camunda Platform 8 API Keys from Exercise 1 Save the configuration Press the Picture button  If you go back to your Camunda Platform 8 Console now, and look under the Operate tab, you should see your Exercise 5 process running.</description>
+    </item>
+    
+    <item>
+      <title>Testing the Process</title>
+      <link>https://davidgs.com/camunda-workshop/exercise5/testing_the_process/</link>
+      <pubDate>Tue, 26 Apr 2022 20:01:44 +0200</pubDate>
+      
+      <guid>https://davidgs.com/camunda-workshop/exercise5/testing_the_process/</guid>
+      <description>Running the Process Without the Camera From within the Web Modeler you can always start an instance of the process to test it. You will need to click the Start Process button on the top right of the modeler and add a JSON object containing some information to start the process:
+{&amp;#34;imageLoc&amp;#34;: &amp;#34;https://davidgs.com:5050/pix/headshot.png&amp;#34;, &amp;#34;isPicture&amp;#34;: true } That picture exists, and will be used to start an instance of the process to be evaluated.</description>
+    </item>
+    
+    <item>
+      <title>Conclusions</title>
+      <link>https://davidgs.com/camunda-workshop/exercise5/conclusions/</link>
+      <pubDate>Tue, 26 Apr 2022 19:59:38 +0200</pubDate>
+      
+      <guid>https://davidgs.com/camunda-workshop/exercise5/conclusions/</guid>
+      <description>Conclusion We have now seen how using a DMN Decision table can greatly simplify and streamline the entire process. We have reduced the human interaction to a single form, and we have a single DMN table to make all the decisions before dispensing Skittles.
+In the next exercise we will see how we can remove all human interaction from the process and turn everything over to some Image AI technology to make all the decisions.</description>
+    </item>
+    
+  </channel>
+</rss>

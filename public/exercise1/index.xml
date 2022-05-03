@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Exercise 1 on Camunda IoT Workshop</title>
+    <link>https://davidgs.com/camunda-workshop/exercise1/</link>
+    <description>Recent content in Exercise 1 on Camunda IoT Workshop</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 26 Apr 2022 18:27:00 +0200</lastBuildDate><atom:link href="https://davidgs.com/camunda-workshop/exercise1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Camunda Platform 8</title>
+      <link>https://davidgs.com/camunda-workshop/exercise1/camunda_platform_8/</link>
+      <pubDate>Tue, 26 Apr 2022 18:31:55 +0200</pubDate>
+      
+      <guid>https://davidgs.com/camunda-workshop/exercise1/camunda_platform_8/</guid>
+      <description>Camunda Platform 8 (C8) account The first step, of course, is to Sign up for an account.
+This is a free trial account which will give you 30-days to try out Camunda Platform 8. You can use this account to create and deploy processes. It is the account you&amp;rsquo;ll be using throughout this lab.
+Once you&amp;rsquo;ve clicked on the link above, you will out the form to create your account:</description>
+    </item>
+    
+    <item>
+      <title>Google Vision AI</title>
+      <link>https://davidgs.com/camunda-workshop/exercise1/google_vision_ai/</link>
+      <pubDate>Tue, 26 Apr 2022 18:42:12 +0200</pubDate>
+      
+      <guid>https://davidgs.com/camunda-workshop/exercise1/google_vision_ai/</guid>
+      <description>Google Cloud account Later on in this lab we will be using the Google Image AI service to process images. In order to use the service, you will need to create a Google Cloud account. If you already have a google account, you can use that account.
+You can login to your Google account, and then go to the Cloud Console where you can create a new project.
+Once your project is created, go to the Getting Started box and click the explore and enable APIs link.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Exercise 2 on Camunda IoT Workshop</title>
+    <link>https://davidgs.com/camunda-workshop/exercise2/</link>
+    <description>Recent content in Exercise 2 on Camunda IoT Workshop</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 26 Apr 2022 18:47:27 +0200</lastBuildDate><atom:link href="https://davidgs.com/camunda-workshop/exercise2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setup</title>
+      <link>https://davidgs.com/camunda-workshop/exercise2/setup/</link>
+      <pubDate>Tue, 26 Apr 2022 19:04:26 +0200</pubDate>
+      
+      <guid>https://davidgs.com/camunda-workshop/exercise2/setup/</guid>
+      <description>Seting up the Worker The script-worker.go file is the solution here. It will start a task worker and listen for tasks from your process. When a task is received, it will execute the task and then complete the task.
+The task listener looks for 2 variables in the incoming job: count and add. If the count variable is missing, it will default to initializing it at 0. If the add variable is missing, it will default to adding 1 to the count variable.</description>
+    </item>
+    
+    <item>
+      <title>Testing</title>
+      <link>https://davidgs.com/camunda-workshop/exercise2/testing/</link>
+      <pubDate>Tue, 26 Apr 2022 19:04:33 +0200</pubDate>
+      
+      <guid>https://davidgs.com/camunda-workshop/exercise2/testing/</guid>
+      <description>Testing your Script Worker To make sure that your script worker is working correctly, let&amp;rsquo;s run a few tests.
+First, we will need to create and deploy a process that will call your script worker task.
+in the script-worker.go file set the PROC_NAME constant to AddOneTask, build and start your script-worker.
+There is a file test-script-worker.bpmn in this directory that you can use to create a test process. You can drag-drop this file into the Modeler tab of Camunda Cloud.</description>
+    </item>
+    
+  </channel>
+</rss>

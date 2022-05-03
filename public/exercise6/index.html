@@ -1,0 +1,1406 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.94.2" />
+    <meta name="description" content="">
+
+
+    <link rel="icon" href="/camunda-workshop/images/favicon.png" type="image/png">
+
+    <title>Exercise 6 :: Camunda IoT Workshop</title>
+
+    
+    <link href="/camunda-workshop/css/nucleus.css?1651015392" rel="stylesheet">
+    <link href="/camunda-workshop/css/fontawesome-all.min.css?1651015392" rel="stylesheet">
+    <link href="/camunda-workshop/css/hybrid.css?1651015392" rel="stylesheet">
+    <link href="/camunda-workshop/css/featherlight.min.css?1651015392" rel="stylesheet">
+    <link href="/camunda-workshop/css/perfect-scrollbar.min.css?1651015392" rel="stylesheet">
+    <link href="/camunda-workshop/css/auto-complete.css?1651015392" rel="stylesheet">
+    <link href="/camunda-workshop/css/atom-one-dark-reasonable.css?1651015392" rel="stylesheet">
+    <link href="/camunda-workshop/css/theme.css?1651015392" rel="stylesheet">
+    <link href="/camunda-workshop/css/tabs.css?1651015392" rel="stylesheet">
+    <link href="/camunda-workshop/css/hugo-theme.css?1651015392" rel="stylesheet">
+    
+    
+
+    <script src="/camunda-workshop/js/jquery-3.3.1.min.js?1651015392"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/camunda-workshop/exercise6/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a href=".."><img src="/images/Logo_Black.png"></a>
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/camunda-workshop/js/lunr.min.js?1651015392"></script>
+<script type="text/javascript" src="/camunda-workshop/js/auto-complete.js?1651015392"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/davidgs.com\/camunda-workshop";
+    
+</script>
+<script type="text/javascript" src="/camunda-workshop/js/search.js?1651015392"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/'><i class='fas fa-home'></i> Home</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/camunda-workshop/exercise1/" title="Exercise 1" class="dd-item
+        
+        
+        
+        ">
+      <a href="/camunda-workshop/exercise1/">
+          <b>1. </b>Exercise 1
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise1/camunda_platform_8/" title="Camunda Platform 8" class="dd-item ">
+        <a href="/camunda-workshop/exercise1/camunda_platform_8/">
+        <b>A. </b>Camunda Platform 8
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise1/google_vision_ai/" title="Google Vision AI" class="dd-item ">
+        <a href="/camunda-workshop/exercise1/google_vision_ai/">
+        <b>B. </b>Google Vision AI
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/camunda-workshop/exercise2/" title="Exercise 2" class="dd-item
+        
+        
+        
+        ">
+      <a href="/camunda-workshop/exercise2/">
+          <b>2. </b>Exercise 2
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise2/setup/" title="Setup" class="dd-item ">
+        <a href="/camunda-workshop/exercise2/setup/">
+        <b>A. </b>Setup
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise2/testing/" title="Testing" class="dd-item ">
+        <a href="/camunda-workshop/exercise2/testing/">
+        <b>B. </b>Testing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/camunda-workshop/exercise3/" title="Exercise 3" class="dd-item
+        
+        
+        
+        ">
+      <a href="/camunda-workshop/exercise3/">
+          <b>3. </b>Exercise 3
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise3/building_hardware/" title="Building The Hardware" class="dd-item ">
+        <a href="/camunda-workshop/exercise3/building_hardware/">
+        <b>A. </b>Building The Hardware
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise3/configuring_hardware/" title="Configuring The Hardware" class="dd-item ">
+        <a href="/camunda-workshop/exercise3/configuring_hardware/">
+        <b>B. </b>Configuring The Hardware
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise3/software_settings/" title="Software Settings" class="dd-item ">
+        <a href="/camunda-workshop/exercise3/software_settings/">
+        <b>C. </b>Software Settings
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise3/troubleshooting/" title="Troubleshooting" class="dd-item ">
+        <a href="/camunda-workshop/exercise3/troubleshooting/">
+        <b>D. </b>Troubleshooting
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/camunda-workshop/exercise4/" title="Exercise 4" class="dd-item
+        
+        
+        
+        ">
+      <a href="/camunda-workshop/exercise4/">
+          <b>4. </b>Exercise 4
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise4/starting_a_process_instance/" title="Starting A Process Instance" class="dd-item ">
+        <a href="/camunda-workshop/exercise4/starting_a_process_instance/">
+        <b>A. </b>Starting A Process Instance
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise4/completing_tasks/" title="Completing Tasks" class="dd-item ">
+        <a href="/camunda-workshop/exercise4/completing_tasks/">
+        <b>B. </b>Completing Tasks
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise4/testing_a_process_instance/" title="Testing A Process Instance" class="dd-item ">
+        <a href="/camunda-workshop/exercise4/testing_a_process_instance/">
+        <b>C. </b>Testing A Process Instance
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise4/lessons_learned/" title="Lessons Learned" class="dd-item ">
+        <a href="/camunda-workshop/exercise4/lessons_learned/">
+        <b>D. </b>Lessons Learned
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/camunda-workshop/exercise5/" title="Exercise 5" class="dd-item
+        
+        
+        
+        ">
+      <a href="/camunda-workshop/exercise5/">
+          <b>5. </b>Exercise 5
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise5/creating_a_decision_table/" title="Creating A Decision Table" class="dd-item ">
+        <a href="/camunda-workshop/exercise5/creating_a_decision_table/">
+        <b>A. </b>Creating A Decision Table
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise5/creating_a_form/" title="Creating A Form" class="dd-item ">
+        <a href="/camunda-workshop/exercise5/creating_a_form/">
+        <b>B. </b>Creating A Form
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise5/creating_a_model/" title="The Simplified Model" class="dd-item ">
+        <a href="/camunda-workshop/exercise5/creating_a_model/">
+        <b>C. </b>The Simplified Model
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise5/deploying_the_process/" title="Deploying the process" class="dd-item ">
+        <a href="/camunda-workshop/exercise5/deploying_the_process/">
+        <b>D. </b>Deploying the process
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise5/starting_the_process/" title="Starting the process" class="dd-item ">
+        <a href="/camunda-workshop/exercise5/starting_the_process/">
+        <b>E. </b>Starting the process
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise5/testing_the_process/" title="Testing the Process" class="dd-item ">
+        <a href="/camunda-workshop/exercise5/testing_the_process/">
+        <b>F. </b>Testing the Process
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise5/conclusions/" title="Conclusions" class="dd-item ">
+        <a href="/camunda-workshop/exercise5/conclusions/">
+        <b>E. </b>Conclusions
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/camunda-workshop/exercise6/" title="Exercise 6" class="dd-item
+        parent
+        active
+        
+        ">
+      <a href="/camunda-workshop/exercise6/">
+          <b>6. </b>Exercise 6
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise6/a_new_model/" title="A New Model" class="dd-item ">
+        <a href="/camunda-workshop/exercise6/a_new_model/">
+        <b>A. </b>A New Model
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise6/google_ai/" title="Google AI Process" class="dd-item ">
+        <a href="/camunda-workshop/exercise6/google_ai/">
+        <b>B. </b>Google AI Process
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise6/making_decisions/" title="Making Decisions" class="dd-item ">
+        <a href="/camunda-workshop/exercise6/making_decisions/">
+        <b>C. </b>Making Decisions
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/camunda-workshop/exercise6/conclusions/" title="Conclusions" class="dd-item ">
+        <a href="/camunda-workshop/exercise6/conclusions/">
+        <b>D. </b>Conclusions
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>Workshop content © <a href="https://davidgs.com" target=_blank>David G. Simmons</a>, 2022</p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            <a href='/camunda-workshop/'>Camunda IoT Workshop</a> > Exercise 6
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+          <div id="chapter">
+        
+        <div id="body-inner">
+          
+
+        
+
+
+
+	<h3 id="humans-are-slow">Humans are slow</h3>
+<p>As we&rsquo;ve seen in the previous exercises, humans are slow. They take a long time to think about what they want to do, and they don&rsquo;t always get it right. Also, filling out the same form repeatedly is tedious and time consuming, and people get tired of doing the same thing over and over.</p>
+<p>We saw that we can reduce some of this time by reducing the number of forms, but still, there is a form that requires human interaction.</p>
+<p>In this final exercise we will see how we can automate an entire process by removing all human interaction and still achieving a result.</p>
+<h2 id="what-we-will-do">What we will do</h2>
+<p>In order for this portion of the workshop to work, we are going to change the overall task a little bit. We could continue with the costume evaluation process, but in order to do so we would first have to train a Visual AI model to detect the things we&rsquo;re looking for, and that is well outside of the scope of this workshop.</p>
+<p>If training an AI model is something you&rsquo;re interested in doing, please feel free to contribute that model to this github repo so that others can use it.</p>
+<p>Since we don&rsquo;t have a trained AI model for costumes and ages, we&rsquo;re going to use a pre-trained Google Vision AI model to evaluate the emotional state of a person and dispense candy depending on their state.</p>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+            </div> 
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/camunda-workshop/exercise5/conclusions/" title="Conclusions"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/camunda-workshop/exercise6/a_new_model/" title="A New Model" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/camunda-workshop/js/clipboard.min.js?1651015392"></script>
+    <script src="/camunda-workshop/js/perfect-scrollbar.min.js?1651015392"></script>
+    <script src="/camunda-workshop/js/perfect-scrollbar.jquery.min.js?1651015392"></script>
+    <script src="/camunda-workshop/js/jquery.sticky.js?1651015392"></script>
+    <script src="/camunda-workshop/js/featherlight.min.js?1651015392"></script>
+    <script src="/camunda-workshop/js/highlight.pack.js?1651015392"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/camunda-workshop/js/modernizr.custom-3.6.0.js?1651015392"></script>
+    <script src="/camunda-workshop/js/learn.js?1651015392"></script>
+    <script src="/camunda-workshop/js/hugo-learn.js?1651015392"></script>
+    
+        
+            <script src="/camunda-workshop/mermaid/mermaid.js?1651015392"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    
+
+    
+<script type="text/javascript">
+  var sc_project = 12747505;
+  var sc_invisible = 1;
+  var sc_security = "ec9c0e17";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+<noscript>
+  <div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img
+        class="statcounter" src="https://c.statcounter.com/12747505/0/ec9c0e17/1/" alt="Web Analytics"
+        referrerPolicy="no-referrer-when-downgrade"></a></div>
+</noscript>
+
+  </body>
+</html>
